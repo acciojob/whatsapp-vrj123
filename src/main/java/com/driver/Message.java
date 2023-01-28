@@ -7,4 +7,25 @@ public class Message {
     private String content;
     private Date timestamp;
 
+    Message(String content){
+        this.content=content;
+        Date obj = new Date();
+        this.timestamp=obj;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getContent(){
+        return this.content;
+    }
+
+    public void setTimestamp(Date timestamp){
+        this.timestamp=timestamp;
+    }
+
+    public Date getTimestamp(){
+        return this.timestamp;
+    }
 }
